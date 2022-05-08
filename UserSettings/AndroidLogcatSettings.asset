@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1B091FDEE007SK",
         "name": "com.DefaultCompany.WalletConnectUnity",
-        "processId": 24201,
+        "processId": 8095,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -82,50 +82,44 @@
         },
         {
             "deviceId": "1B091FDEE007SK",
-            "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 13532,
-            "exited": true
-        },
-        {
-            "deviceId": "1B091FDEE007SK",
-            "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 15252,
-            "exited": true
-        },
-        {
-            "deviceId": "1B091FDEE007SK",
-            "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 17843,
-            "exited": true
-        },
-        {
-            "deviceId": "1B091FDEE007SK",
-            "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 19403,
-            "exited": true
-        },
-        {
-            "deviceId": "1B091FDEE007SK",
-            "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 21903,
-            "exited": true
-        },
-        {
-            "deviceId": "1B091FDEE007SK",
-            "name": "io.metamask",
-            "processId": 22107,
+            "name": "com.google.android.apps.nexuslauncher",
+            "processId": 1651,
             "exited": false
         },
         {
             "deviceId": "1B091FDEE007SK",
             "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 23303,
-            "exited": false
+            "processId": 21872,
+            "exited": true
         },
         {
             "deviceId": "1B091FDEE007SK",
             "name": "com.DefaultCompany.WalletConnectUnity",
-            "processId": 24201,
+            "processId": 22745,
+            "exited": true
+        },
+        {
+            "deviceId": "1B091FDEE007SK",
+            "name": "com.DefaultCompany.WalletConnectUnity",
+            "processId": 23207,
+            "exited": true
+        },
+        {
+            "deviceId": "1B091FDEE007SK",
+            "name": "com.DefaultCompany.WalletConnectUnity",
+            "processId": 23881,
+            "exited": true
+        },
+        {
+            "deviceId": "1B091FDEE007SK",
+            "name": "com.DefaultCompany.WalletConnectUnity",
+            "processId": 2885,
+            "exited": true
+        },
+        {
+            "deviceId": "1B091FDEE007SK",
+            "name": "com.DefaultCompany.WalletConnectUnity",
+            "processId": 8095,
             "exited": false
         }
     ],

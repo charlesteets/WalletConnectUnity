@@ -145,6 +145,46 @@ namespace WalletConnectSharp.Unity
             }
         }
 
+        public async Task<bool> WaitUntilReady()
+        {
+            if (ActiveSession == null)
+                return false;
+            
+            if (ActiveSession.ReadyForUserPrompt)
+                return true;
+            
+            var eventTask = new TaskCompletionSource<bool>(TaskCreationOptions.None);
+            
+            ActiveSession.OnSessionReadyForUserPrompt += delegate(object sender, WalletConnectSession session)
+            {
+                eventTask.SetResult(session.ReadyForUserPrompt);
+            };
+
+            await eventTask.Task;
+
+            return eventTask.Task.Result;
+        }
+        
+        public async Task<bool> WaitForConnected()
+        {
+            if (ActiveSession == null)
+                return false;
+            
+            if (ActiveSession.ReadyForUserPrompt)
+                return true;
+            
+            var eventTask = new TaskCompletionSource<bool>(TaskCreationOptions.None);
+            
+            ActiveSession.OnSessionConnect += delegate(object sender, WalletConnectSession session)
+            {
+                eventTask.SetResult(session.Connected);
+            };
+
+            await eventTask.Task;
+
+            return eventTask.Task.Result;
+        }
+
         public async Task<WCSessionData> Connect()
         {
             SavedSession savedSession = null;

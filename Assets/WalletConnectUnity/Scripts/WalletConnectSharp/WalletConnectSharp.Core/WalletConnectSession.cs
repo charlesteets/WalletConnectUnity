@@ -25,6 +25,7 @@ namespace WalletConnectSharp.Core
         private long _handshakeId;
         
         public event EventHandler<WalletConnectSession> OnSessionConnect;
+        public event EventHandler<WalletConnectSession> OnSessionReadyForUserPrompt;
         public event EventHandler<WalletConnectSession> OnSessionCreated;
         public event EventHandler<WalletConnectSession> OnSessionResumed;
         public event EventHandler OnSessionDisconnect;
@@ -491,6 +492,9 @@ namespace WalletConnectSharp.Core
                 });
             
             ReadyForUserPrompt = true;
+
+            if (OnSessionReadyForUserPrompt != null)
+                OnSessionReadyForUserPrompt(this, this);
             
             //Debug.Log("[WalletConnect] Session Ready for Wallet");
 
